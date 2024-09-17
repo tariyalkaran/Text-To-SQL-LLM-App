@@ -26,9 +26,9 @@ PyPI packages: google.generativeai, dotenv, sqlite3.
 **Installation**
 
 Clone the repository:
+```Python
+git clone https://github.com/yourusername/Gemini-SQL-Query-Bot.git
 ```
-git clone https://github.com/yourusername/Gemini-SQL-Query-Bot.git```
-
 Install required packages:
 ```
 pip install -r requirements.txt```
