@@ -30,16 +30,18 @@ Clone the repository:
 git clone https://github.com/yourusername/Gemini-SQL-Query-Bot.git
 ```
 Install required packages:
+```Python
+pip install -r requirements.txt
 ```
-pip install -r requirements.txt```
 
 Set up environment variables. Create a .env file in the project root and add your Google Gemini API key:
+```python
+GOOGLE_API_KEY=your_google_gemini_api_key
 ```
-GOOGLE_API_KEY=your_google_gemini_api_key```
 
 Prepare your SQLite database (student.db) with the following schema:
 sql
-```
+```sql
 CREATE TABLE STUDENT (
     NAME VARCHAR(25),
     CLASS VARCHAR(25),
@@ -47,11 +49,12 @@ CREATE TABLE STUDENT (
     MARKS INT,
     Date_of_Admission DATE,
     Gender VARCHAR(25)
-);```
-
-Start the Streamlit app:
+);
 ```
-streamlit run app.py```
+Start the Streamlit app:
+```Python
+streamlit run app.py
+```
 Input any natural language query related to the STUDENT database. For example:
 
 "How many students are in the Data Science class?"
