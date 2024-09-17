@@ -64,6 +64,7 @@ The app will use Google Gemini AI to convert the question into an SQL query and 
 **Example Queries**
 How many records are present?
 SQL query: SELECT COUNT(*) FROM STUDENT;
+
 Tell me all students studying in the Data Science class.
 SQL query: SELECT * FROM STUDENT WHERE CLASS="Data Science";
 
@@ -71,8 +72,7 @@ SQL query: SELECT * FROM STUDENT WHERE CLASS="Data Science";
 app.py: The main application file which contains the Streamlit code and functions for interacting with Google Gemini AI and the SQLite database.
 .env: A file to securely store the API keys (not to be pushed to GitHub).
 requirements.txt: Contains all the required dependencies for the project.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 **Acknowledgments**
 Google Gemini AI: For providing the natural language to SQL conversion capability.
